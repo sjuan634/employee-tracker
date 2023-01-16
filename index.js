@@ -26,6 +26,10 @@ const start = () => {
         "Add a role",
         "Add an employee",
         "Update an employee role",
+        "Update an employee manager",
+        "View employees by manager",
+        "View employees by department",
+        "View total used budget for each department",
         "Quit"
       ]
     })
@@ -51,6 +55,18 @@ const start = () => {
           break;
         case "Update an employee role":
           updateEmployeeRole();
+          break;
+        case "Update an employee manager":
+          updateEmployeeManager();
+          break;
+        case "View employees by manager":
+          viewEmployeeByManager();
+          break;
+        case "View employees by department":
+          viewEmployeeByDep();
+          break;
+        case "View total used budget for each department":
+          viewDepBudget();
           break;
         case "Quit":
           connection.end();
